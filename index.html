@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body{
+        background-color: black
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+    .c{
+        position: relative;
+        left: 370px;
+        top: 30px;
+        font-family: 'Nova Square', sans-serif;
+        color: goldenrod;
+        /* width: 20%; */
+    }
+    .b{
+        width: 80%;
+        border: 2px solid red;
+        height: 500px;
+        position: relative;
+        left: 100px;
+        top: 30px;
+    }
+    .d label{
+        color: goldenrod;
+        padding: 15px;
+        
+    }
+    .d{
+        /* border: 2px solid red; */
+        position: relative;
+        top: 80px;
+        left: 300px;
+        padding: 10px;
+    }
+    input{
+        position: relative;
+        left: 17px;
+        height: 20px;
+        border-radius: 4px;
+    }
+    button{
+        border-radius: 7px;
+        background-color: gold;
+        color: black;
+        /* height: 30px; */
+        padding: 5px;
+        position: relative;
+        left: 160px;
+        top: 30px;
+    }
+    h4{
+        color: lawngreen;
+        /* border: 2px solid red; */
+        width: 60%;
+        height: 40px;
+        position: relative;
+        top: 150px;
+        left: 270px;
+    }
+    span{
+        position: relative;
+        left: 50px;
+    }
+
+
+    @media screen and (max-width:576px) {
+       .c{
+        position: relative;
+        left: 60px;
+        top: 0px;
+        /* border: 2px solid red; */
+        width: 80%;
+       } 
+       .d{
+        /* border: 2px solid red; */
+        position: relative;
+        top: 10px;
+        left: 40px;
+        padding: 10px;
+        width: 70%;
+
+
+        
+    }
+    button{
+        left: 50px;
+       }
+     h4{
+        left: 20px;
+        width: 70%;
+        top: 100px;
+       }
+       .b{
+        top: 0px;
+        left: 30px;
+       }
+      
+       
+
+}
+    @media screen and (min-width:577px) and (max-width:768px) {
+        .c{
+        position: relative;
+        left: 160px;
+        top: 0px;
+        /* border: 2px solid red; */
+        width: 70%;
+       } 
+       .d{
+        /* border: 2px solid red; */
+        position: relative;
+        top: 20px;
+        left: 60px;
+        padding: 15px;
+        width: 70%;
+       }
+       button{
+        left: 150px;
+       }
+       h4{
+        left: 40px;
+        width: 70%;
+        top: 100px;
+       }
+      
+
+        
+    }
+    @media screen and (min-width:769px) and (max-width:992px) {
+        .c{
+        position: relative;
+        left: 250px;
+        top: 0px;
+        /* border: 2px solid red; */
+        width: 60%;
+       } 
+       .d{
+        /* border: 2px solid red; */
+        position: relative;
+        top: 30px;
+        left: 90px;
+        padding: 17px;
+       }
+       button{
+        left: 250px;
+       }
+       h4{
+        left: 80px;
+        width: 70%;
+        top: 100px;
+       }
+        
+    }
+    @media screen and (min-width:993px) and (max-width:1200px) {
+        .c{
+        position: relative;
+        left: 330px;
+        top: 0px;
+        /* border: 2px solid red; */
+        width: 50%;
+       } 
+       .d{
+        /* border: 2px solid red; */
+        position: relative;
+        top: 40px;
+        left: 220px;
+        padding: 20px;
+        width: 70%;
+       }
+       button{
+        left: 100px;
+       }
+       h4{
+        left: 160px;
+        width: 70%;
+        top: 100px;
+       }
+
+        
+    }
+    @media screen and (min-width:1201px) and (max-width:1440px) {
+        .c{
+        position: relative;
+        left: 400px;
+        top: 0px;
+        /* border: 2px solid red; */
+        width: 40%;
+       } 
+       .d{
+        /* border: 2px solid red; */
+        position: relative;
+        top: 80px;
+        left: 300px;
+        padding: 10px;
+        width: 60%;
+       }
+       button{
+        left: 150px;
+       }
+        
+    }
+    @media screen and (min-width:1441px)  {
+        .d{
+
+        }
+
+        
+    }
+</style>
+<body>
+    <div class="container-fluid a">
+        <div class="b">
+            
+                <div class=" c">
+                    <h1>Love Calculater</h1>
+                </div>
+                <div class="d">
+                    <label for="">Enter Your Name:-</label><input type="text" name="" id="n"><br>
+                    <label for="">Enter Your GF Name:-</label><input type="text" name="" id="i"><br><br>
+                    <button id="s">Calculate</button>
+                </div>
+                <div class="e">
+                    <h4><span id="h"></span></h4>
+                </div>
+            
+        </div>
+
+    </div>
+    <script>
+        
+        document.getElementById('s').addEventListener('click',()=>{
+            let a=document.getElementById('n').value
+        let b=document.getElementById('i').value
+            let c=Math.random()
+            c=c*100
+            c=Math.floor(c)
+            if(b!=''|| null ){
+                document.getElementById('h').innerHTML=`Hy ${a} your Love Percentage is ${c}% ! &#128525`
+            }else{
+                document.getElementById('h').innerHTML=`Hey ${a} Don't You Have Any Gf? &#128529`
+
+            }
+            
+        })
+    </script>
+</body>
+</html>
